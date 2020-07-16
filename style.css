@@ -1,14 +1,17 @@
 <href="style.css" rel="stylesheet" type="text/css" />
-<style>
+
 body {
-   background-image: url(https://www.bing.com/images/search?view=detailV2&ccid=JP6vQPhm&id=https%3A%2F%2Fi.pinimg.com%2F736x%2Fa3%2Fa0%2F9d%2Fa3a09d5c6543ca8f1e3dbdc1d2f2843e.jpg&thid=OIP.JP6vQPhm0z_ot59RYKskgQAAAA&mediaurl=https%3A%2F%2Fi.pinimg.com%2F736x%2Fa3%2Fa0%2F9d%2Fa3a09d5c6543ca8f1e3dbdc1d2f2843e.jpg&exph=700&expw=467&q=Scenery+Aesthetic+lights&simid=607992907499046349&ck=3765CC46DCABBE9C582F4BFF5C74BE9A&selectedindex=0&ajaxhist=0&vt=2&sim=11);
+   
      background-repeat: no-repeat;
   text-align: left;
 }
-</style>
+
 .img{
    border: none;
   float: left;
   width: 120px;
 }
-
+.winter {
+  color: rgb(195,230,255);
+  font-style: oblique;
+} 
