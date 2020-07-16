@@ -4,8 +4,8 @@
 .img{
    border: none;
   float: left;
-  width: 1px;
-  height: 12px;
+  width: 10;
+  height: 10;
 }
 .winter {
   color: rgb(195,230,255);
@@ -13,5 +13,10 @@
 } 
 table {
   border-spacing: 5px;
+  
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 
