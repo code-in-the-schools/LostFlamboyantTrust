@@ -1,17 +1,17 @@
-<href="style.css" rel="stylesheet" type="text/css" />
 
-body {
-   
-     background-repeat: no-repeat;
-  text-align: left;
-}
+
 
 .img{
    border: none;
   float: left;
-  width: 120px;
+  width: 1px;
+  height: 12px;
 }
 .winter {
   color: rgb(195,230,255);
   font-style: oblique;
 } 
+table {
+  border-spacing: 5px;
+}
+
