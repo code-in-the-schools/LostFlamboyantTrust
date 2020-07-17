@@ -3,16 +3,20 @@
  <head>
  </head>
 <body>
+
 <!-- links to previous pages--> 
 <a href="index.html"> Back to home </a>
 <a href="NextPage.html"> Previous page </a>
 
+<!-- game code-->
 var score = 0;
 onEvent("space_button", "click", function() {
-  setScreen("game_screen");
+  setScreen("game background.jpg");
   setText(" title, Click on Baby Trunks 20 times!!!");
   hideElement("title");
 });
+
+<!-- when trunks is clicked his position is changed and score goes up-->
 onEvent("baby trunks.png", "click", function() {
   setPosition("baby trunks.png", randomNumber(50,280), randomNumber(50, 350));
   score = score + 1;
@@ -21,13 +25,18 @@ onEvent("baby trunks.png", "click", function() {
     setScreen("win_screen");
   }
 });
+
+<!-- if the background is clicked then player loses and game over appears-->
 onEvent("game background.jpg", "click", function() {
   score = score + 1;
   setScreen("game-over screen.png");
 });
+
+<!-- play again button-->
 onEvent("playAgain_button", "click", function() {
   setScreen("welcome_screen");
 });
+<!-- try again button-->
 onEvent("try-again btn.png", "click", function() {
   setScreen("welcome_screen");
 });
