@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html>
  <head>
-
  </head>
 <body>
-
+<!-- links to previous pages--> 
 <a href="index.html"> Back to home </a>
-<a href="NextPage.html"> Before page </a>
+<a href="NextPage.html"> Previous page </a>
 
+var score = 0;
+onEvent("space_button", "click", function() {
+  setScreen("game_screen");
+  setText(" title, Click on Baby Trunks 20 times!!!");
+  hideElement("title");
+});
+onEvent("baby trunks.png", "click", function() {
+  setPosition("baby trunks.png", randomNumber(50,280), randomNumber(50, 350));
+  score = score + 1;
+  setText("total_score", score);
+  if (score == 20) {
+    setScreen("win_screen");
+  }
+});
+onEvent("game background.jpg", "click", function() {
+  score = score + 1;
+  setScreen("game-over screen.png");
+});
+onEvent("playAgain_button", "click", function() {
+  setScreen("welcome_screen");
+});
+onEvent("try-again btn.png", "click", function() {
+  setScreen("welcome_screen");
+});
 </body>
 </html>
