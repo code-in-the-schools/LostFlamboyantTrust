@@ -1,0 +1,20 @@
+
+h3 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+
+body {
+   background-image: url("https://i.pinimg.com/originals/d1/d4/be/d1d4be3982796893d022af7fee274fe5.jpg");
+    background-repeat: repeat;
+     background-attachment: fixed;
+    }
+.blossom {
+  color: rgb(248, 191, 250);
+  font-style: oblique;
+} 
+#The-Love-Of-My-Life-section{
+  background-color: rgb (0,0,0,255);
+}
