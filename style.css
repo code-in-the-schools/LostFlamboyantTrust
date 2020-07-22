@@ -21,3 +21,7 @@ table, th, td {
   width: 100%;
   background-color: #f1f1c1;
 }
+div:hover {
+  width: 300px;
+}
+
