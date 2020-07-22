@@ -3,7 +3,7 @@
  <head>
 <link rel="stylesheet" href="Quiz-style.css">
 </head>
-<body style="background-image: (baby trunks.png);">
+<body style="background-image: url(https://cdn2.scratch.mit.edu/get_image/gallery/3599535_170x100.png);">
 <!-- link to home page-->
  <a href="index.html"> Back to home </a> 
 <!-- link to love page-->
@@ -15,15 +15,28 @@
 
  <p> Who is the greatest anime kid of all time? </p>
 <label for="character">Choose a caracter:</label>
-<select id="character" name="character">
+<select id="character" name="character" onselect="myFunction(this.value)">
   <option value="volvo">Wendy marvel</option>
   <option value="saab">BlackStar</option>
   <option value="fiat">Killua Zoldyack</option>
   <option value="audi">Shiro</option>
 </select>
+<input type="submit" value="Submit">
 
-
+<!-- Wendy marvel gif-->
+<img src= "http://pa1.narvii.com/5988/573e6953f7f8053d7ac41df3a9b9518952c544c3_hq.gif">
+<!-- Black star gif-->
+<img src= "https://media.tenor.co/images/bcec0d37c3926a74ab34dad763ad0539/raw">
+<!-- Killua gif-->
+<img src= "https://media1.tenor.com/images/4a3bf7dfb53302019f65976fde323d0c/tenor.gif?itemid=9359139">
+<!-- Shiro gif-->
+<img src= "https://media1.tenor.com/images/1291995032c16083bfeaac37545e2f4e/tenor.gif?itemid=6238131">
  <p> Name your top 3 best anime </p>
+ <img src= "https://media.giphy.com/media/uV4OKp4Dt2Zry/giphy.gif" height= 70>
+<img src=" http://gifimage.net/wp-content/uploads/2017/08/transparent-anime-gif-14.gif" height= 70>
+<img src="https://i.gifer.com/YTqY.gif" height= 70>
+<img src="https://media.giphy.com/media/yi6aDxEerznGw/giphy.gif"height= 70>
+
 <form action="/action_page.php">
   <fieldset>
 <!-- first anime input-->
@@ -36,12 +49,23 @@
 <label for="tname">Third anime name:</label>
 <input type="text" id="thirdname" name="thirdname">
 <input type="submit" value="Submit">
+<img src= "https://i.pinimg.com/originals/23/4b/eb/234beb6a318cdfaab5fc726f7a5dcaa8.gif" height= 50>
 </fieldset>
 </form>
 
 <audio src= "https://vm.tiktok.com/JFBvYGD/" autoplay>
 </auido>
+function enableAutoplay() { 
+  audi.autoplay = true;
+  audi.load();
+}
 
+
+var vid = document.getElementById("myVideo");
+function enableAutoplay() { 
+  vid.autoplay = true;
+  vid.load();
+}
 
 </body>
 </html>
