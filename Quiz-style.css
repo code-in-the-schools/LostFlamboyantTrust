@@ -34,4 +34,21 @@ input[type=button], input[type=submit], input[type=reset] {
 div {
   box-shadow: 10px 10px grey;
 }
+div.image {
+   background-image: url("http://pa1.narvii.com/5988/573e6953f7f8053d7ac41df3a9b9518952c544c3_hq.gif");
+   border: solid #555;
+}
+div.imageTwo {
+background-image: url("https://media.tenor.co/images/bcec0d37c3926a74ab34dad763ad0539/raw");
+ border: solid #555;
+}
+div.imageThree{
+background-image: url("https://media1.tenor.com/images/4a3bf7dfb53302019f65976fde323d0c/tenor.gif?itemid=9359139");
+border: solid #555;
+}
+div.imageFour{
+background-image: url("https://media1.tenor.com/images/1291995032c16083bfeaac37545e2f4e/tenor.gif?itemid=6238131");
+border: solid #555;
+}
+
 
