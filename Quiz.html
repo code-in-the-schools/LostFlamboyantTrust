@@ -3,13 +3,7 @@
  <head>
 <link rel="stylesheet" href="Quiz-style.css">
 
-<script>
-  function drawScrene() {
-bubbles();
-bubblesX2();
-myFunction();
-}
-</script>
+
 </head>
 
 <body style="background-image: url(https://cdn2.scratch.mit.edu/get_image/gallery/3599535_170x100.png);">
@@ -25,7 +19,7 @@ myFunction();
 
  <p> Who is the greatest anime kid of all time? </p>
 <label for="character">Choose a character:</label>
-<select id="character" name="character" onselect="myFunction(this.value)">
+<select id="myselection" name="character" onchange="myFunction(this.value)">
   <option value="kid">Select</option>
   <option value="fairytail">Wendy marvel</option>
   <option value="souleater">BlackStar</option>
@@ -33,30 +27,11 @@ myFunction();
   <option value="nogamenolife">Shiro</option>
 </select>
 
-<select onclick="myFunction(fairytail.value)">
-<div class="image"></div>
-</select>
-<select onclick="myFunction(souleater.value)">
-<div class="imageTwo"></div>
-</select>
-<select onclick="myFunction(hxh.value)">
-<div class="imageThree"></div>
-</select>
-<select onclick="myFunction(nogamenolife.value)">
-<div class="imageFour"></div>
-</select>
 
-
-
-<!-- Wendy marvel gif-->
-<img src= "http://pa1.narvii.com/5988/573e6953f7f8053d7ac41df3a9b9518952c544c3_hq.gif">
-<!-- Black star gif-->
-<img src= "https://media.tenor.co/images/bcec0d37c3926a74ab34dad763ad0539/raw">
-<!-- Killua gif-->
-<img src= "https://media1.tenor.com/images/4a3bf7dfb53302019f65976fde323d0c/tenor.gif?itemid=9359139">
-<!-- Shiro gif-->
-<img src= "https://media1.tenor.com/images/1291995032c16083bfeaac37545e2f4e/tenor.gif?itemid=6238131">
-
+<div class="image" onclick="myFunction(value)"></div>
+<div class="imageTwo" onclick="myFunction(value)"></div>
+<div class="imageThree" onclick="myFunction(value)"></div>
+<div class="imageFour" onclick="myFunction(value)"></div>
 
  <p> Name your top 3 best anime </p>
  <img src= "https://media.giphy.com/media/uV4OKp4Dt2Zry/giphy.gif" height= 70>
@@ -75,10 +50,25 @@ myFunction();
 <!-- third anime input-->
 <label for="tname">Third anime name:</label>
 <input type="text" id="thirdname" name="thirdname">
-<input type="submit" value="Submit">
 <img src= "https://i.pinimg.com/originals/23/4b/eb/234beb6a318cdfaab5fc726f7a5dcaa8.gif" height= 50>
 </fieldset>
 </form>
 
+<p> Name your top 3 games </p> 
+
+<form action="/action_page.php">
+  <fieldset>
+<!-- first game input-->
+ <label for="fname">First game name:</label>
+<input type="text" id="firstname" name="firstname">
+<!-- second game input-->
+<label for="sname">Second game name:</label>
+<input type="text" id="secondname" name="secondname">
+<!-- third game input-->
+<label for="tname">Third game name:</label>
+<input type="text" id="thirdname" name="thirdname">
+<input type="submit" value="Submit">
+</fieldset>
+</form>
 </body>
 </html>

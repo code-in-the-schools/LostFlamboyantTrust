@@ -26,25 +26,25 @@ for (var i = 0; i < 400; i++) {
 }
 
 function myFunction() {
-  var x = document.getElementById("div.image");
+  var x = document.getElementById("myselection");
   if (x.style.display === "none") {
     x.style.display = "image";
   } else {
     x.style.display = "none";
   }
-  var x = document.getElementById("div.imageTwo");
+  var x = document.getElementById("myselection");
   if (x.style.display === "none") {
     x.style.display = "imageTwo";
   } else {
     x.style.display = "none";
   }
-  var x = document.getElementById("div.imageThree");
+  var x = document.getElementById("myselection");
   if (x.style.display === "none") {
     x.style.display = "imageThree";
   } else {
     x.style.display = "none";
   }
-  var x = document.getElementById("div.imageFour");
+  var x = document.getElementById("myselection");
   if (x.style.display === "none") {
     x.style.display = "imageFour";
   } else {
